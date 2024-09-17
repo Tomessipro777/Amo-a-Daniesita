@@ -3,15 +3,18 @@ import streamlit as st
 # Lista ampliada de 200 frases amorosas
 frases = [
     "Eres el sol que ilumina mis días.",
+    "Hare todo por que me perdones.",
+    "Hola beba te extraño.",
     "Cada amanecer me recuerda a tu belleza.",
     "La luna palidece ante tu luz.",
     "Tus ojos brillan como mil estrellas en el cielo nocturno.",
     "Nunca dejaré de pensar en ti, eres mi inspiración diaria.",
-    "Mi amor por ti es más brillante que el sol en su zenit.",
+    "Mi amor por ti es más brillante que el sol en el atardecer.",
     "Cada vez que veo la luna, pienso en nosotros.",
     "Eres el sol de mis días y la luna de mis noches.",
     "Mi corazón late más fuerte cada vez que veo tu sonrisa.",
-    "No hay estrella en el cielo que se compare con tu belleza."
+    "No hay estrella en el cielo que se compare con tu belleza.",
+    "Tobi y tu son lo que mas amo en este mundo.",
 ] * 20  # Multiplicamos para tener más de 200 frases
 
 # Índice para controlar cuál frase se muestra
@@ -34,7 +37,7 @@ st.markdown(
 st.markdown("<h3 style='text-align:center; color:black;'>Perdóname Dania linda</h3>", unsafe_allow_html=True)
 
 # Botón para mostrar frase
-if st.button("Ámame"):
+if st.button("PERDONAME LINDA"):
     st.session_state.indice = (st.session_state.indice + 1) % len(frases)
 
 # Mostrar la frase actual
